@@ -1,0 +1,133 @@
+
+<style>
+  .section { margin-bottom: 2rem; }
+  .section-title { font-size: 13px; font-weight: 500; color: var(--color-text-secondary); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.75rem; }
+  .job-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-lg); padding: 1rem 1.25rem; margin-bottom: 0.75rem; }
+  .job-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 8px; }
+  .job-title { font-size: 15px; font-weight: 500; color: var(--color-text-primary); margin: 0 0 2px; }
+  .job-company { font-size: 13px; color: var(--color-text-secondary); margin: 0; }
+  .score-badge { min-width: 44px; text-align: center; padding: 4px 10px; border-radius: var(--border-radius-md); font-size: 12px; font-weight: 500; flex-shrink: 0; }
+  .score-high { background: #EAF3DE; color: #3B6D11; }
+  .score-mid { background: #FAEEDA; color: #854F0B; }
+  .job-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+  .meta-pill { font-size: 12px; color: var(--color-text-secondary); background: var(--color-background-secondary); padding: 3px 8px; border-radius: 20px; display: flex; align-items: center; gap: 4px; }
+  .job-why { font-size: 13px; color: var(--color-text-secondary); margin-top: 8px; border-top: 0.5px solid var(--color-border-tertiary); padding-top: 8px; }
+  .ctc { font-size: 13px; font-weight: 500; color: var(--color-text-primary); margin-top: 4px; }
+  .apply-btn { margin-top: 10px; display: inline-block; font-size: 12px; padding: 5px 12px; border: 0.5px solid var(--color-border-secondary); border-radius: var(--border-radius-md); color: var(--color-text-info); text-decoration: none; background: var(--color-background-primary); cursor: pointer; }
+  .skill-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; }
+  .skill-card { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 8px 10px; font-size: 13px; }
+  .skill-label { color: var(--color-text-primary); font-weight: 500; }
+  .skill-bar-bg { background: var(--color-border-tertiary); border-radius: 4px; height: 4px; margin-top: 6px; }
+  .skill-bar { height: 4px; border-radius: 4px; background: #1D9E75; }
+  .gap-card { background: var(--color-background-primary); border: 0.5px solid var(--color-border-tertiary); border-radius: var(--border-radius-md); padding: 8px 12px; margin-bottom: 6px; display: flex; align-items: center; gap: 10px; font-size: 13px; }
+  .gap-icon { font-size: 16px; }
+  .gap-have { color: #3B6D11; }
+  .gap-need { color: #854F0B; }
+  .metric-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 1rem; }
+  .metric { background: var(--color-background-secondary); border-radius: var(--border-radius-md); padding: 12px; text-align: center; }
+  .metric-num { font-size: 22px; font-weight: 500; color: var(--color-text-primary); }
+  .metric-lbl { font-size: 12px; color: var(--color-text-secondary); margin-top: 2px; }
+  .rec-item { display: flex; gap: 10px; font-size: 13px; color: var(--color-text-primary); margin-bottom: 8px; align-items: flex-start; }
+  .rec-num { min-width: 22px; height: 22px; border-radius: 50%; background: var(--color-background-info); color: var(--color-text-info); font-size: 11px; font-weight: 500; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+</style>
+
+<div style="padding: 1rem 0;">
+
+  <div class="section">
+    <div class="section-title">Top matching jobs</div>
+
+    <div class="job-card" style="border-left: 3px solid #1D9E75;">
+      <div class="job-header">
+        <div>
+          <p class="job-title">Data Analyst</p>
+          <p class="job-company">Khodiyar Handwork · Noida, UP</p>
+        </div>
+        <span class="score-badge score-high">88%</span>
+      </div>
+      <div class="job-meta">
+        <span class="meta-pill"><i class="ti ti-map-pin" aria-hidden="true"></i> Noida (Onsite)</span>
+        <span class="meta-pill"><i class="ti ti-calendar" aria-hidden="true"></i> Feb 17, 2026</span>
+        <span class="meta-pill"><i class="ti ti-briefcase" aria-hidden="true"></i> Full-time</span>
+      </div>
+      <p class="ctc">₹3.6 – 6 LPA (₹30K–50K/mo)</p>
+      <p class="job-why"><i class="ti ti-check" aria-hidden="true" style="color:#3B6D11"></i> Matches SQL, Python, Power BI, Tableau, Excel skills. Fresher-friendly ("entry-level candidates with strong skills can apply"). Closest location to Hapur.</p>
+      <a class="apply-btn" href="https://to.indeed.com/aa6nvpqqwzx9" target="_blank">Apply on Indeed <i class="ti ti-external-link" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="job-card" style="border-left: 3px solid #1D9E75;">
+      <div class="job-header">
+        <div>
+          <p class="job-title">Junior Data Analyst</p>
+          <p class="job-company">Crossbond · Okhla, Delhi</p>
+        </div>
+        <span class="score-badge score-high">82%</span>
+      </div>
+      <div class="job-meta">
+        <span class="meta-pill"><i class="ti ti-map-pin" aria-hidden="true"></i> Delhi (Onsite)</span>
+        <span class="meta-pill"><i class="ti ti-calendar" aria-hidden="true"></i> May 15, 2026</span>
+        <span class="meta-pill"><i class="ti ti-briefcase" aria-hidden="true"></i> Full-time</span>
+      </div>
+      <p class="ctc">₹1.8 – 3.6 LPA (₹15K–30K/mo) — below target</p>
+      <p class="job-why"><i class="ti ti-check" aria-hidden="true" style="color:#3B6D11"></i> Junior title — perfect for freshers. Uses Excel, Power BI dashboards. Most recently posted of the three. Salary lower than your target but room to negotiate.</p>
+      <a class="apply-btn" href="https://to.indeed.com/aavxqw9nyz8z" target="_blank">Apply on Indeed <i class="ti ti-external-link" aria-hidden="true"></i></a>
+    </div>
+
+    <div class="job-card">
+      <div class="job-header">
+        <div>
+          <p class="job-title">Data Analytics Intern → Full-time</p>
+          <p class="job-company">Brightbots Pvt. Ltd. · Gurugram / Delhi NCR</p>
+        </div>
+        <span class="score-badge score-mid">70%</span>
+      </div>
+      <div class="job-meta">
+        <span class="meta-pill"><i class="ti ti-map-pin" aria-hidden="true"></i> Gurugram / Delhi NCR</span>
+        <span class="meta-pill"><i class="ti ti-calendar" aria-hidden="true"></i> Jun 04, 2026</span>
+        <span class="meta-pill"><i class="ti ti-clock" aria-hidden="true"></i> 6-month internship</span>
+      </div>
+      <p class="ctc">₹1.2 – 1.8 LPA (₹10K–15K/mo) — internship stipend</p>
+      <p class="job-why"><i class="ti ti-info-circle" aria-hidden="true" style="color:#854F0B"></i> Explicitly open to freshers & final-year students. Good for experience-building if full-time offers are slow. Matches Excel, SQL, Power BI, Tableau, Python skills.</p>
+      <a class="apply-btn" href="https://to.indeed.com/aarnkx98t4bn" target="_blank">Apply on Indeed <i class="ti ti-external-link" aria-hidden="true"></i></a>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Most demanded skills across jobs</div>
+    <div class="skill-grid">
+      <div class="skill-card"><div class="skill-label">SQL</div><div class="skill-bar-bg"><div class="skill-bar" style="width:100%"></div></div><div style="font-size:11px;color:var(--color-text-secondary);margin-top:3px">3/3 jobs</div></div>
+      <div class="skill-card"><div class="skill-label">Excel</div><div class="skill-bar-bg"><div class="skill-bar" style="width:100%"></div></div><div style="font-size:11px;color:var(--color-text-secondary);margin-top:3px">3/3 jobs</div></div>
+      <div class="skill-card"><div class="skill-label">Power BI</div><div class="skill-bar-bg"><div class="skill-bar" style="width:100%"></div></div><div style="font-size:11px;color:var(--color-text-secondary);margin-top:3px">3/3 jobs</div></div>
+      <div class="skill-card"><div class="skill-label">Python</div><div class="skill-bar-bg"><div class="skill-bar" style="width:85%"></div></div><div style="font-size:11px;color:var(--color-text-secondary);margin-top:3px">2/3 jobs</div></div>
+      <div class="skill-card"><div class="skill-label">Tableau</div><div class="skill-bar-bg"><div class="skill-bar" style="width:67%"></div></div><div style="font-size:11px;color:var(--color-text-secondary);margin-top:3px">2/3 jobs</div></div>
+      <div class="skill-card"><div class="skill-label">Dashboards</div><div class="skill-bar-bg"><div class="skill-bar" style="width:100%"></div></div><div style="font-size:11px;color:var(--color-text-secondary);margin-top:3px">3/3 jobs</div></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Skill gap analysis</div>
+    <div class="gap-card"><span class="gap-icon">✅</span><span class="gap-have"><b>You have:</b> Python, SQL, Power BI, Tableau, Excel, ML basics — covers core requirements</span></div>
+    <div class="gap-card"><span class="gap-icon">⚠️</span><span class="gap-need"><b>Gap:</b> ETL processes — mentioned in senior roles, good to learn basics</span></div>
+    <div class="gap-card"><span class="gap-icon">⚠️</span><span class="gap-need"><b>Gap:</b> Cloud platforms (AWS/Azure/GCP) — preferred in mid-level roles</span></div>
+    <div class="gap-card"><span class="gap-icon">⚠️</span><span class="gap-need"><b>Gap:</b> Portfolio / projects — no job replaceable signal without live project proof</span></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Market snapshot</div>
+    <div class="metric-row">
+      <div class="metric"><div class="metric-num">3</div><div class="metric-lbl">Matching roles found</div></div>
+      <div class="metric"><div class="metric-num">₹3–6L</div><div class="metric-lbl">Fresher market range</div></div>
+      <div class="metric"><div class="metric-num">High</div><div class="metric-lbl">SQL + Power BI demand</div></div>
+    </div>
+    <p style="font-size:13px;color:var(--color-text-secondary);margin:0">Your ₹5–8 LPA target is slightly above the typical fresher band (₹3–5 LPA) in Delhi NCR for Data Analyst roles. Achievable at product-based IT/SaaS companies — harder at SMEs.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Recommendations to boost interview chances</div>
+    <div class="rec-item"><div class="rec-num">1</div><div>Build 1–2 end-to-end projects (e.g. sales dashboard in Power BI, EDA in Python) and host on GitHub. This is the single biggest differentiator for freshers.</div></div>
+    <div class="rec-item"><div class="rec-num">2</div><div>Get the <b>Google Data Analytics Certificate</b> (Coursera, ~3 months) — widely recognized and boosts your profile significantly.</div></div>
+    <div class="rec-item"><div class="rec-num">3</div><div>Apply to <b>remote-first SaaS startups</b> on Wellfound and Naukri — they hire pan-India and your location (Hapur) won't be a barrier.</div></div>
+    <div class="rec-item"><div class="rec-num">4</div><div>Target jobs posted in the <b>last 7–15 days</b> for best response rates. Set daily job alerts on Naukri and LinkedIn.</div></div>
+    <div class="rec-item"><div class="rec-num">5</div><div>Consider accepting ₹3–4 LPA initially at a good company. 6–12 months of real experience unlocks the ₹5–8 LPA band much faster.</div></div>
+  </div>
+
+</div>
