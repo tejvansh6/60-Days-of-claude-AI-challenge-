@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Honda City Facelift Fuel Analytics Dashboard</title>
+<style>
+:root{--bg:#0a0f1e;--glass:rgba(255,255,255,.08);--txt:#eef3ff;--petrol:#3b82f6;--diesel:#9ca3af;--cng:#22c55e;--e85:#f59e0b;--ev:#8b5cf6}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:Arial,sans-serif;padding:20px}
+.wrap{max-width:1400px;margin:auto}
+.glass{background:var(--glass);border:1px solid rgba(255,255,255,.15);border-radius:20px;padding:18px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.kpi{font-size:28px;font-weight:bold}
+svg{width:100%;height:auto}
+.selected{box-shadow:0 0 24px rgba(59,130,246,.7)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+.card{background:var(--glass);padding:14px;border-radius:16px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="glass">
+<h1>Honda City Facelift · Petrol · Age:3y · 1000km/mo</h1>
+<p>Complete Fuel Analytics Dashboard</p>
+</div>
+<br>
+<div class="grid">
+<div class="glass"><div>Your Fuel Cost/km</div><div class="kpi">₹6.67</div></div>
+<div class="glass"><div>E85 Cost/km</div><div class="kpi">₹6.11</div></div>
+<div class="glass"><div>E85 Premium vs Petrol</div><div class="kpi">-8.46%</div></div>
+<div class="glass"><div>Break-even Price</div><div class="kpi">₹83.61</div></div>
+<div class="glass"><div>Monthly Cost</div><div class="kpi">₹6,669</div></div>
+</div>
+<br>
+<div class="glass">
+<h2>Cost/km by Fuel</h2>
+<svg viewBox="0 0 800 300">
+<rect x="80" y="90" width="80" height="160" fill="#3b82f6"/>
+<rect x="220" y="75" width="80" height="175" fill="#9ca3af"/>
+<rect x="360" y="140" width="80" height="110" fill="#22c55e"/>
+<rect x="500" y="103" width="80" height="147" fill="#f59e0b"/>
+<rect x="640" y="170" width="80" height="80" fill="#8b5cf6"/>
+</svg>
+</div>
+<br>
+<div class="glass">
+<h2>E85 Score: 7.8 / 10</h2>
+<p>E85 offers lower operating cost and emissions than Petrol while maintaining similar refuel convenience.</p>
+</div>
+<br>
+<div class="cards">
+<div class="card selected"><h3>Petrol</h3><p>✅ Smooth</p><p>✅ Available everywhere</p><p>❌ Higher emissions</p><p>❌ Higher fuel cost</p></div>
+<div class="card"><h3>Diesel</h3><p>✅ Torque</p><p>✅ Highway use</p><p>❌ Maintenance</p><p>❌ Regulations</p></div>
+<div class="card"><h3>CNG</h3><p>✅ Cheapest fuel</p><p>✅ Cleaner</p><p>❌ Space loss</p><p>❌ Fewer stations</p></div>
+<div class="card"><h3>E85</h3><p>✅ Renewable</p><p>✅ Lower CO₂</p><p>❌ Availability</p><p>❌ Mileage loss</p></div>
+<div class="card"><h3>EV</h3><p>✅ Lowest running cost</p><p>✅ Zero tailpipe CO₂</p><p>❌ Charging time</p><p>❌ Charger dependency</p></div>
+</div>
+</div>
+</body>
+</html>
