@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Premium Executive Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<style>
+body{margin:0;font-family:Segoe UI,Arial;background:linear-gradient(135deg,#020617,#0f172a,#111827);color:#fff}
+.header{padding:30px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;padding:20px}
+.card{background:rgba(255,255,255,.06);border-radius:18px;padding:20px;backdrop-filter:blur(10px)}
+.metric{font-size:40px;font-weight:bold}
+canvas{max-height:320px}
+table{width:100%;border-collapse:collapse}
+td,th{padding:10px;border-bottom:1px solid rgba(255,255,255,.1)}
+</style>
+</head>
+<body>
+<div class="header">
+<h1>Quarterly Growth Strategy Meeting</h1>
+<p>Premium Executive Dashboard</p>
+</div>
+
+<div class="grid">
+<div class="card"><div class="metric">12%</div>Revenue Growth</div>
+<div class="card"><div class="metric">18%</div>Target Growth</div>
+<div class="card"><div class="metric">94%</div>Retention</div>
+<div class="card"><div class="metric">34%</div>Traffic Growth</div>
+</div>
+
+<div class="grid">
+<div class="card"><h2>Revenue vs Target</h2><canvas id="pie1"></canvas></div>
+<div class="card"><h2>Contracts Closed</h2><canvas id="pie2"></canvas></div>
+</div>
+
+<div class="grid">
+<div class="card"><h2>Business Priorities</h2><canvas id="bar1"></canvas></div>
+<div class="card"><h2>Speaker Contributions</h2><canvas id="doughnut"></canvas></div>
+</div>
+
+<div class="grid">
+<div class="card">
+<h2>Action Items</h2>
+<table>
+<tr><th>Task</th><th>Owner</th></tr>
+<tr><td>Cost Estimate</td><td>CTO</td></tr>
+<tr><td>Architecture Review</td><td>CTO</td></tr>
+<tr><td>Performance Investigation</td><td>Engineering Team</td></tr>
+<tr><td>Vendor Proposals</td><td>CFO</td></tr>
+</table>
+</div>
+</div>
+
+<script>
+new Chart(document.getElementById('pie1'),{
+type:'pie',
+data:{labels:['Actual Growth 12%','Gap 6%'],datasets:[{data:[12,6]}]}
+});
+
+new Chart(document.getElementById('pie2'),{
+type:'pie',
+data:{labels:['Closed 9','Remaining 5'],datasets:[{data:[9,5]}]}
+});
+
+new Chart(document.getElementById('bar1'),{
+type:'bar',
+data:{
+labels:['Revenue Risk','Performance','Capacity','Budget'],
+datasets:[{label:'Priority',data:[95,90,85,70]}]
+}
+});
+
+new Chart(document.getElementById('doughnut'),{
+type:'doughnut',
+data:{
+labels:['CEO','Sales','CFO','Marketing','CTO','Product'],
+datasets:[{data:[25,15,15,10,20,15]}]
+}
+});
+</script>
+</body>
+</html>
